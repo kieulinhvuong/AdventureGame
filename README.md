@@ -31,3 +31,30 @@ Ascii adventure in C#
 * MovingGameObject extends GameObject, but adds movement as a possibility.
     * Knows about Screen
     * needs to ask Screen about legal moves
+
+### Features added
+* Jumping feature
+    * Added 4 new functions for keys 't', 'f', 'g', 'h'. By pressing one of the keys, the player can move three steps at a time. 
+    * Key 't': up
+    * Key 'g': down
+    * Key 'f': left
+    * Key 'j': right
+* Treasure1 
+    * Added another MovingGameObject named treasure1, represented by 'T', which is the same as the original treasure to confuse the mob
+    * treasure1 is passable, but it can only be eaten by the player, not the mob
+    * treasure1 can move 1 step by pressing one of the keys 'i', 'j', 'k', 'l'
+    * Key 'i': up
+    * Key 'k': down
+    * Key 'j': left
+    * Key 'l': right
+* Change screen color randomly 
+    * Change the screen color by pressing key 'c'
+* Heart 
+    * Added a new GameObject named heart, represented by H. H cannot move
+    * heart is passable. It can be eaten by the player and the mob
+    * heart is the extra life for the player, if the player eats the heart, it wins. 
+* Exit screen 
+    * Press key 'e' to clear the screen and start over
+    
+
+
